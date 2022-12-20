@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - prints all combination of single digits
@@ -18,4 +19,4 @@ int main(void)
 		}
 	putchar('\n');
 	return (0);
-}
+	}
