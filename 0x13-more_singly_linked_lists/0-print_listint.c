@@ -7,14 +7,15 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	const listint_t *h;
+       	const listint_t *t;
 	unsigned int num = 0;
-
-	while (h)
+	
+	t = h;
+	while (t)
 	{
-		printf("%d/n", h->n);
+		printf("%d\n", t->n);
 		num++;
-		h = h->next;
+		t = t->next;
 	}
 	return (num);
 }
