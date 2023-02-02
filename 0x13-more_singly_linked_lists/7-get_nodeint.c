@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * get_nodeint - returns the nth node of a listint_t linked list.
+ * get_nodeint_at_index - returns the nth node of a listint_t linked list.
  * @head: address of the first node in a list
  * @index: position of the node
  * Return: node address
