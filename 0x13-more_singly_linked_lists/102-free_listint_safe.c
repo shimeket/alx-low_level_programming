@@ -23,7 +23,7 @@ size_t looped_listint_count(listint_t *head)
 	{
 		if (sloth == bolt)
 		{
-			sloth = bolt;
+			sloth = head;
 			while (sloth != bolt)
 			{
 				nodes++;
