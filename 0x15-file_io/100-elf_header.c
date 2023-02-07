@@ -16,6 +16,7 @@ void print_osabi(unsigned char *e_ident);
 void print_type(unsigned int e_type, unsigned char *e_ident);
 void print_entry(unsigned long int e_entry, unsigned char *e_ident);
 void close_elf(int elf);
+int main(int __attribute__((__unused__)) argc, char *argv[]);
 
 /**
  * check_elf - Checks if a file is an ELF file.
