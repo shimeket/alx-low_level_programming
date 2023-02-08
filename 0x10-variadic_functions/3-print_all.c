@@ -21,7 +21,7 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == t_arg[j] && c)
 			{
-				printf(", ");
+				printf(",");
 				break;
 			} j++;
 		}
@@ -29,13 +29,13 @@ void print_all(const char * const format, ...)
 		{
 		case 'c':
 			printf("%c", va_arg(valist, int)), c = 1;
-				break;
+			break;
 		case 'i':
 			printf("%d", va_arg(valist, int)), c = 1;
-				break;
+			break;
 		case 'f':
 			printf("%f", va_arg(valist, double)), c = 1;
-				break;
+			break;
 		case 's':
 			str = va_arg(valist, char *), c = 1;
 			if (!str)
@@ -43,6 +43,8 @@ void print_all(const char * const format, ...)
 				printf("(nil)");
 				break;
 			}
+			printf("%s", str);
+			break;
 		} i++;
 	}
 	printf("\n"), va_end(valist);
